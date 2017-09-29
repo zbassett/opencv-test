@@ -1,0 +1,10 @@
+version: '2'
+services:
+  opencv:
+    build:
+        context: .
+    volumes:
+       - ./files:/files
+    ports:
+       - "8080:80"
+    tty: true
